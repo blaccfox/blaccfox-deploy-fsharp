@@ -23,7 +23,7 @@ module Core =
 
         WebApplicationElement <- WebApplicationBuilderElement.Build()
 
-        WebApplicationElement.MapGet("/", Func<string>(fun () -> "Hello F#!")) |> ignore
+        WebApplicationElement.MapGet("/asd", Func<string>(fun () -> "Hello F#!")) |> ignore
 
         WebApplicationElement.Run()
 
